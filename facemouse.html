@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+      *{
+           margin:0;
+           padding:0;
+          box-sizing:border-box;
+        }
+body{
+               display:flex;
+               justify-content:center;
+              align-items:center;
+              min-height:100vh;
+              background-color:#0c5f7f;
+           }
+   .face{
+                position:relative;
+                width:300px;
+                height:300px;
+                border-radius:50%;
+                background-color:#ffcd00;
+                display:flex;
+                justify-content:center;
+               align-items:center;
+            }
+.face::before{
+                               content: ' ';
+                               position:absolute;
+                               top:180px;
+                               width:150px;
+                               height:70px;
+                              background-color:red;
+                              border-bottom-left-radius:70px;
+                              border-bottom-right-radius:70px;
+                              transition:0.5s;
+                        }  
+.face:hover::before{
+                                               top:210px;
+                                               width:150px;
+                                               height:20px;
+                                               background-color:#b57700;
+                                               border-bottom-left-radius:0px;
+                                               border-bottom-right-radius:0px;
+                                        }     
+             .eyes{
+                            position:relative;
+                            top:-40px;
+                            display:flex;
+                      } 
+  .eyes  .eye::before{
+                                            content: '';
+                                            position:absolute;
+                                            top:50%;
+                                            left:25px;
+                                            transform:translate(-50%,-50%);
+                                            width:40px;
+                                            height:40px;
+                                            background-color:#333;
+                                            border-radius:50%;
+                                        }  
+  .eyes  .eye{
+                           position:relative;
+                           width:80px;
+                           height:80px;
+                           display:block;
+                           background-color:#fff;
+                           margin:15px;
+                          border-radius:50%;
+                      }
+ .eye:hover::before{
+                           position:relative;
+                           left:50px;
+                           right:50px;
+                           transition:0.5s;
+                           transform:rotate(10234rad)  scale(3) translate(20px,20px);
+                      }
+    .face{
+                position:relative;
+                width:300px;
+                height:300px;
+                border-radius:50%;
+                background-color:#ffcd00;
+                display:flex;
+                justify-content:center;
+               align-items:center;
+            }
+.face::before{
+                               content: ' ';
+                               position:absolute;
+                               top:180px;
+                               width:150px;
+                               height:70px;
+                              background-color:red;
+                              border-bottom-left-radius:70px;
+                              border-bottom-right-radius:70px;
+                              transition:0.5s;
+                        }  
+.face:hover::before{
+                                               top:210px;
+                                               width:150px;
+                                               height:20px;
+                                               background-color:#b57700;
+                                               border-bottom-left-radius:0px;
+                                               border-bottom-right-radius:0px;
+                                        }     
+             .eyes{
+                            position:relative;
+                            top:-40px;
+                            display:flex;
+                            
+                      } 
+  .eyes  .eye::before{
+                                            content: '';
+                                            position:absolute;
+                                            top:50%;
+                                            left:25px;
+                                            transform:translate(-50%,-50%);
+                                            width:40px;
+                                            height:40px;
+                                            background-color:#333;
+                                            border-radius:50%;
+                                        }  
+  .eyes  .eye{
+                           position:relative;
+                           width:80px;
+                           height:80px;
+                           display:block;
+                           background-color:#fff;
+                           margin:15px;
+                          border-radius:50%;
+                      }
+ .eye:hover::before{
+                           position:relative;
+                           left:50px;
+                           right:50px;
+                           transition:0.5s;
+                           transform:rotate(10234deg)  scale(3) translate(20px,20px);
+                      }
+           #bvm{
+                        width:550px;
+                        height:200px;
+                        font-size:20px;
+                        padding:100px;
+                        font-family:arial;
+                        color:white;
+                        align-items:center;
+                        }
+       #bvm:hover{
+                                 color:red;
+                               }
+     
+ 
+</style>
+</head>
+<body>
+<div  class="face">
+<div class="eyes">
+<div class="eye"></div>
+<div class="eye"></div>
+</div>
+</div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<div  class="face">
+<div class="eyes">
+<div class="eye"></div>
+<div class="eye"></div>
+</div>
+</div>
+<p id="bvm">This is Animated Eyes Follow Mouse Cursor uses by "CSS" and "HTML".</p>
+</body>
+</html>
